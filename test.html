@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your name and assignment details -->
+    <!-- Name: [Your Name] -->
+    <!-- Assignment: Adding Sound and Enhancements to Webpage -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Webpage with Sound</title>
+    
+    <!-- Link to external stylesheet if needed -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Add some basic styles inline -->
+    <style>
+        body {
+            /* Set a background color */
+            background-color: #f0f8ff;
+            /* Use a custom font from Google Fonts */
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            /* Custom font size and color for the title */
+            font-size: 3em;
+            color: #333;
+        }
+
+        .content {
+            /* Styling for the content area */
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        img {
+            /* Style for images */
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px; /* Add rounded corners to the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Background sound implementation -->
+    <!-- Use the 'audio' element to play background sound -->
+    <audio id="background-sound" loop autoplay>
+        <!-- Replace 'us-lab-background.mp3' with the path to your sound file -->
+        <source src="us-lab-background.mp3" type="audio/mpeg">
+        <!-- Text for browsers that don't support the audio element -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Main content of the page -->
+    <div class="content">
+        <!-- Page title -->
+        <h1>Mahmoud hamadah</h1>
+        
+        <!-- Image with alt text for accessibility -->
+        <!-- Replace '12.jpg' with the actual path if the file is not in the same directory -->
+        <img src="12.jpg" alt="A beautiful scenery">
+
+        <!-- Another audio element for sound effect -->
+        <audio controls>
+            <!-- Replace 'Seagull-call-sound-effect.mp3' with the path to your sound effect file -->
+            <source src="Seagull-call-sound-effect.mp3" type="audio/mpeg">
+            <!-- Text for browsers that don't support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- JavaScript for additional functionality -->
+    <script>
+        // This script can be used to control the audio or any interactive elements
+        // For example, controlling the playback of the background sound
+        const backgroundSound = document.getElementById('background-sound');
+
+        // You can add event listeners to control playback or volume
+        backgroundSound.volume = 0.5; // Set volume level (0.0 to 1.0)
+    </script>
+</body>
+</html>
